@@ -1,7 +1,7 @@
 # Site
 title:          David ML
-logo:           '/blob/master/_assets/img/User.jpeg'
-background:     '/blob/master/_assets/img/CabeceraYoutube.png'
+logo:           '/_assets/img/User.jpeg'
+background:     '/_assets/img/CabeceraYoutube.png'
 description:    Description of the site
 
 
