@@ -1,5 +1,9 @@
 <hr class="hrGradient">
                     <h3 class="socialMedia" style="font-size:30px;">
+                  
+                        {% if site.email %}<a class="social-btn" href="mailto:{{ site.email }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-envelope-square"></i></a>{% endif %}
+                        {% if site.youtubechannel %}<a class="social-btn" href="https://youtube.com/channel/{{ site.youtubechannel }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-youtube"></i></a>{% endif %}
                         {% if site.twitter %}<a class="social-btn" href="http://twitter.com/{{ site.twitter }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-twitter-square"></i></a>{% endif %}
                         {% if site.github %}<a class="social-btn" href="http://github.com/{{ site.github }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-github"></i></a>{% endif %}
+
                     </h3>
