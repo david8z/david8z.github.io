@@ -1,0 +1,45 @@
+    <!--To pass the video Id to JS-->
+    <p id = "videoId" style="display:none">{{page.videoId}}</p>
+    <!--The video object-->
+    <div id="wrapper">
+      <div id="player" ></div>
+    </div>
+
+    <!--Script to create the youtube vidoe frame-->
+    <script>
+      var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '360',
+          width: '640',
+          playerVars: {
+              autoplay: 1,
+              fs: 0,
+              controls: 1,
+              iv_load_policy: 3,
+              rel: 0,
+              showinfo: 0,
+              modestbranding: 1,
+              disablekb: 1
+          },
+          events: {
+            'onReady': onPlayerReady,
+          }
+        });
+      }
+
+      function onPlayerReady(event) {
+        event.target.unMute();
+        event.target.setVolume(100);
+        event.target.loadVideoById({'videoId': document.getElementById("videoId").innerHTML,
+               'startSeconds': 1,
+               'suggestedQuality': 'large'});
+        event.target.stopVideo();
+      }
+    </script>

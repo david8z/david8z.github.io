@@ -1,0 +1,14 @@
+# Site
+title:          David ML
+logo:           '/_assets/img/User.jpeg'
+background:     '/_assets/img/CabeceraYoutube.png'
+description:    Description of the site
+
+
+# Social media
+twitter:        tech_arch8
+github:         david8z
+
+
+# Excluded files
+exclude:        LICENSE
