@@ -36,7 +36,6 @@
       function onPlayerReady(event) {
         event.target.unMute();
         event.target.setVolume(100);
-        {% capture videoId %}{{ site.videoId }}{% endcapture %}
         event.target.loadVideoById({'videoId': document.getElementById("videoId").innerHTML,
                'startSeconds': 1,
                'suggestedQuality': 'large'});

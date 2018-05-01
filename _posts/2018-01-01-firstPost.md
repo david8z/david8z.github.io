@@ -1,101 +1,73 @@
 ---
 layout: post
 videoId:  wYxDJOFgDw0
-published: true
 ---
 
-# Hello this is my first post
-
-
-- How are you all?
-
-
----
-
-
-Hi
-
-# Hello this is my first post
-
-
-- How are you all?
-
+# H1 text
+## H2 text
+### H3 text
+#### H4 text
+##### H5 text
+###### H6 text
 
 ---
 
+**bold**
 
-Hi
-
-# Hello this is my first post
-
-
-- How are you all?
-
+_italic_
 
 ---
 
-
-Hi
-
-# Hello this is my first post
-
-
-- How are you all?
-
+Selection list:
+- [X] 1
+- [ ] 2
 
 ---
 
-
-Hi
-
-# Hello this is my first post
-
-
-- How are you all?
-
+> Quote
 
 ---
 
-
-Hi
-
-# Hello this is my first post
-
-
-- How are you all?
-
+|Column 1| Column 2|
+|:-----:|:------:|
+| Hi  | Bye |
 
 ---
 
-> Prueba 1
-> Prueba 2
-
-- lista
-  - list2
-    - list3
-
-
-    |Advantages|Disadvantages|
-    |:--|:--|
-    | h | g|
-
-
+Ruby code:
 ``` ruby
 def what?
       42
 end
 ```
 
+---
 
-Hi
+1. List 1
+    1. Embedded list 1
+    2. Embedded list 2
 
-# Hello this is my first post
+2. List 2
+
+---
+
+This is <span style="color: red">written in
+red</span>.
+
+---
+
+This is a text with a footnote[^1].
 
 
-- How are you all?
+[^1]: And here is the definition.
 
 
 ---
 
+![Cabecera image](/img/CabeceraYoutube.png)
 
-Hi
+---
+
+A [link](http://kramdown.gettalong.org "hp") to the homepage.
+
+---

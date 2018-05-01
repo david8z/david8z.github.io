@@ -3,7 +3,9 @@ title:          David ML
 logo:           '/img/User.jpeg'
 background:     '/img/workspaceImg.png'
 description:    Description of the site
-
+author:         David Alarcón
+url:            'http://david8z.github.io'
+permalink:      /:title/
 
 
 
@@ -15,10 +17,11 @@ email:          alarconsegarradavid@gmail.com
 
 
 
-encoding: utf-8
-markdown: kramdown
-highlighter: rouge
+encoding:       utf-8
+markdown:       kramdown
+highlighter:    rouge
 kramdown:
-  input: GFM
-  hard_wrap: false
+  input:        GFM
+  hard_wrap:    false
+  wrap:         false
   syntax_highlighter: rouge
