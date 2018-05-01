@@ -1,11 +1,10 @@
     <!--To pass the video Id to JS-->
     <p id = "videoId" style="display:none">{{page.videoId}}</p>
     <!--The video object-->
-    <div id="wrapper">
-      <div id="player" ></div>
+    <div id="videoWrapper">
+      <div id="player"></div>
     </div>
 
-    <!--Script to create the youtube vidoe frame-->
     <script>
       var tag = document.createElement('script');
 
@@ -37,6 +36,7 @@
       function onPlayerReady(event) {
         event.target.unMute();
         event.target.setVolume(100);
+        {% capture videoId %}{{ site.videoId }}{% endcapture %}
         event.target.loadVideoById({'videoId': document.getElementById("videoId").innerHTML,
                'startSeconds': 1,
                'suggestedQuality': 'large'});

@@ -1,17 +1,10 @@
 <!DOCTYPE html>
 <head>
     {% include head.html %}
-    <style>
-      html{
-        background: url({{site.background}}) repeat;
-        background-position: center;
-        background-size: cover;
-      }
-    </style>
 </head>
 <body>
-
-<div id="boxshadow">
+{% include menu.html %}
+<div id="boxHome">
   <div id="logo">
     <img src={{site.logo}} class="imgLogo">
   </div>

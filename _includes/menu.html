@@ -1,0 +1,22 @@
+<div id="sideMenu" class="sideMenu">
+  <a id="closeSideMenuBtn" class="sideMenuBtn" href="javascript:void(0)"  onclick="closeSideMenu()">&times;</a>
+  <a class="sideMenuBtn" href="#">About</a>
+{% for post in site.posts %}
+  <a class="sideMenuBtn" href= {{ site.baseurl }}{% post_url 2018-01-01-firstPost %}>Last Videos</a>
+{% endfor %}
+</div>
+
+<div id="barsBtn">
+  <span style="cursor:pointer; font-size:40px;" onclick="openSideMenu()"><i class="fa fa-fw fa-bars"></i></span>
+</div>
+<script>
+function openSideMenu() {
+    document.getElementById("sideMenu").style.width = "250px";
+    document.getElementById("barsBtn").style.marginLeft = "250px";
+}
+
+function closeSideMenu() {
+    document.getElementById("sideMenu").style.width = "0";
+    document.getElementById("barsBtn").style.marginLeft= "0";
+}
+</script>

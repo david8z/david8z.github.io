@@ -1,8 +1,10 @@
 # Site
 title:          David ML
-logo:           'img/User.jpeg'
-background:     'img/CabeceraYoutube.png'
+logo:           '/img/User.jpeg'
+background:     '/img/workspaceImg.png'
 description:    Description of the site
+
+
 
 
 # Social media
@@ -12,5 +14,11 @@ youtubechannel: UCRhj6ogLmXYyExTmKjuXo-Q
 email:          alarconsegarradavid@gmail.com
 
 
-# Excluded files
-exclude:        LICENSE
+
+encoding: utf-8
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge

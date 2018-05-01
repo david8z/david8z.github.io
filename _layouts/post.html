@@ -1,8 +1,16 @@
 <!DOCTYPE html>
+<html>
 <head>
     {% include head.html %}
 </head>
-<body>  
+<body>
+    {% include menu.html %}
     {% include youtube.html %}
+    <div id="boxPost">
+      {{ content }}
+    </div>
+
+
+
 </body>
 </html>
