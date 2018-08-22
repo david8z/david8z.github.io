@@ -2,7 +2,7 @@
 title:          David ML
 logo:           '/img/User.jpeg'
 background:     '/img/workspaceImg.png'
-description:    Description of the site
+description:    
 author:         David Alarcón
 url:            'http://david8z.github.io'
 permalink:      /:title/

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     {% include head.html %}
 </head>
@@ -11,9 +12,11 @@
   </div>
   <h1 class="h1Home">{{site.title}}</h1>
   <hr class="hrGradient">
-  <h2 class="h2Home">{{site.description}}</h2>
+  <h2 class="h2Home" id="demo">Hi!<br>My name is David.<br>Im a Technology enthusiast, focused on Computer Science. Im currently studying at <i>Universidad Politècnica de València<i> a computer engineering degree.</h2>
+
   {% include social_media.html %}
 </div>
-
+<script src="scripts/typeWriter.js"></script>
+<script>typeWriter("#demo","true",100);</script>
 </body>
 </html>
