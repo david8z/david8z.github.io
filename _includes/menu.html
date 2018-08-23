@@ -1,9 +1,12 @@
 <div id="sideMenu" class="sideMenu">
   <a id="closeSideMenuBtn" class="sideMenuBtn" href="javascript:void(0)"  onclick="closeSideMenu()">&times;</a>
-  <a class="sideMenuBtn" href="http://127.0.0.1:4000">About</a>
-{% for post in site.posts %}
-  <a class="sideMenuBtn" href= {{ site.baseurl }}{% post_url 2018-01-01-firstPost %}>Last Videos</a>
-{% endfor %}
+  <a id="homeButton" class="sideMenuBtn" href="/">Home</a>
+  <a id="postsButton" class="sideMenuBtn" href="javascript:void(0)" onclick="optionsMenu()">Posts</a>
+  <a id="arrowButton" class="sideMenuBtn" onclick="openSideMenu()" href="javascript:void(0)" style="font-size:50px">&#8592;</a>
+  <a id="mlButton" class="sideMenuBtn" href="javascript:void(0)" >ML</a>
+  <a id="linuxButton" class="sideMenuBtn" href="javascript:void(0)">Linux</a>
+  <a id="otherButton" class="sideMenuBtn" href="javascript:void(0)">Others</a>
+
 </div>
 
 <div id="barsBtn">
@@ -12,11 +15,28 @@
 <script>
 function openSideMenu() {
     document.getElementById("sideMenu").style.width = "250px";
-    document.getElementById("barsBtn").style.marginLeft = "250px";
+    document.getElementById("barsBtn").style.opacity = "0";
+    document.getElementById("homeButton").style.display = "block";
+    document.getElementById("postsButton").style.display = "block";
+    document.getElementById("arrowButton").style.display = "none";
+    document.getElementById("mlButton").style.display = "none";
+    document.getElementById("linuxButton").style.display = "none";
+    document.getElementById("otherButton").style.display = "none";
+
 }
 
 function closeSideMenu() {
     document.getElementById("sideMenu").style.width = "0";
-    document.getElementById("barsBtn").style.marginLeft= "0";
+    document.getElementById("barsBtn").style.opacity = "1";
+
+}
+
+function optionsMenu(){
+  document.getElementById("homeButton").style.display = "none";
+  document.getElementById("postsButton").style.display = "none";
+  document.getElementById("arrowButton").style.display = "block";
+  document.getElementById("mlButton").style.display = "block";
+  document.getElementById("linuxButton").style.display = "block";
+  document.getElementById("otherButton").style.display = "block";
 }
 </script>
